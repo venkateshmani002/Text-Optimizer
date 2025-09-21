@@ -1,0 +1,155 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+
+.App {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* === Dark Mode === */
+.App.dark {
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+
+.App.dark textarea {
+  background-color: #1f232b;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.App.dark .preview {
+  background-color: #0b0c10;
+  border: 1px solid #888;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #0d0f15;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-bottom: 1px solid #222;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 24px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* === Container === */
+.container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* === Headline === */
+h2 {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* === Textarea === */
+textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 6px;
+  resize: vertical;
+  margin-bottom: 16px;
+}
+
+/* === Button Group === */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.button-group button {
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* === Specific Buttons === */
+.button-group .blue {
+  background-color: #0d6efd; /* brighter blue */
+  color: white;
+  border: 1px solid #0a58ca;
+}
+
+.button-group .blue:hover {
+  background-color: #0b5ed7;
+}
+
+.button-group .red {
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid #bb2d3b;
+}
+
+.button-group .red:hover {
+  background-color: #b02a37;
+}
+
+.button-group .green {
+  background-color: #198754;
+  color: white;
+  border: 1px solid #157347;
+}
+
+.button-group .green:hover {
+  background-color: #157347;
+}
+
+/* === Text Report === */
+.report {
+  margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* === Preview === */
+.preview-label {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.preview {
+  margin-top: 8px;
+  border-radius: 6px;
+  word-wrap: break-word;
+  background-color: #10131a;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  border: 1px solid #444;
+}
